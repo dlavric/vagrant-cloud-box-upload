@@ -30,7 +30,7 @@ $ vagrant cloud auth login --token <token>
 
 - Upload your local box on VagrantCloud:
 ```shell
-$ vagrant cloud publish dlavric/nginx64 1.0.0 Daniela /Users/daniela/Downloads/dlavric/packer-nginx64/nginx64-vbox.box
+$ vagrant cloud publish dlavric/nginx64 1.0.0 virtualbox /Users/daniela/Downloads/dlavric/packer-nginx64/nginx64-vbox.box
 ```
 
 - Go on Vagrant Cloud and check the box is uploaded:
