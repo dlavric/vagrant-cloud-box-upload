@@ -37,3 +37,27 @@ $ vagrant cloud publish dlavric/nginx64 1.0.0 Daniela /Users/daniela/Downloads/d
 
 https://app.vagrantup.com/dlavric/boxes/nginx64
 
+- Release the version of the box from Vagrant Cloud
+
+- Add a provider named "virtualbox"
+
+- On your local machine, in the directory where the box is created, 
+  add the box name dlavric/nginx64 to the list of Vagrant boxes:
+```shell
+$ vagrant box add --name dlavric/nginx64 nginx64-vbox.box
+```
+
+- Initialize Vagrant box:
+```shell
+$ vagrant init -m dlavric/nginx64
+```
+
+- Start Vagrant
+```shell
+$ vagrant up
+```
+
+- Destroy Vagrant
+```shell
+$ vagrant destroy
+```
